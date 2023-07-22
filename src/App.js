@@ -10,13 +10,13 @@ export const store = createContext();
 
 function App() {
   const [students, setStudents] = useState([
-    { name: "Vini", rollno: "S01", studyclass: "8th", password: "S123#" },
-    { name: "Vandu", rollno: "S02", studyclass: "6th", password: "V123#" },
-    { name: "Ramya", rollno: "S03", studyclass: "9th", password: "R123#" },
-    { name: "Sony", rollno: "S04", studyclass: "7th", password: "O123#" },
-    { name: "pooja", rollno: "S05", studyclass: "8th", password: "P123#" },
-    { name: "Ravi", rollno: "S06", studyclass: "7th", password: "I123#" },
-    { name: "Sonal", rollno: "S07", studyclass: "9th", password: "L123#" },
+    { name: "Samarth", rollno: "S01", studyclass: "8th", password: "S123#" },
+    { name: "Pratik", rollno: "S02", studyclass: "6th", password: "V123#" },
+    { name: "Dishant", rollno: "S03", studyclass: "9th", password: "R123#" },
+    { name: "Onkar", rollno: "S04", studyclass: "7th", password: "O123#" },
+    { name: "Ashish", rollno: "S05", studyclass: "8th", password: "P123#" },
+    { name: "Sandeep", rollno: "S06", studyclass: "7th", password: "I123#" },
+    { name: "Vinu", rollno: "S07", studyclass: "9th", password: "L123#" },
   ]);
   const [teachers, setTeachers] = useState([
     {
@@ -80,10 +80,7 @@ function App() {
               path="/teacherdashboard/:teachid"
               element={<Tdashboard />}
             ></Route>
-            <Route
-              path="/admindashboard/"
-              element={<Adashboard />}
-            ></Route>
+            <Route path="/admindashboard/" element={<Adashboard />}></Route>
           </Routes>
         </store.Provider>
       </Router>

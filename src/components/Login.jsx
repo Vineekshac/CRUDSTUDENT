@@ -40,10 +40,6 @@ const Login = () => {
   };
   return (
     <>
-      <div className="demo bg-orange-600 text-white text-center">
-        DEMO LOGIN For StudentLogin: (StudentID = "S01" Password = "S123#" ) ||
-        For TeacherLogin: ( TeacherID ="T01" Password ="T123#" )
-      </div>
       <div className="login flex items-center flex-col justify-center mt-5">
         <h2 className="text-center text-3xl text-gray-500">
           Student/ Teacher Login
@@ -67,7 +63,7 @@ const Login = () => {
           </select>
           <input
             type="text"
-            placeholder={stuorteach ? "StudentID" : "TeacherId"}
+            placeholder={stuorteach ? "S01" : "TeacherId"}
             className="border-2 rounded p-2 my-2 w-full"
             onChange={(e) => {
               setStuorTID(e.target.value);
@@ -76,7 +72,7 @@ const Login = () => {
           />
           <input
             type="password"
-            placeholder="Password"
+            placeholder="S123#"
             className="border-2 rounded p-2 my-2 w-full"
             onChange={(e) => {
               setPassword(e.target.value);
@@ -86,9 +82,7 @@ const Login = () => {
           <button className="bg-green-400 px-3 py-2 rounded">Submit</button>
         </form>
         <div className="line w-96 h-0.5 bg-gray-400 my-4"></div>
-        <div className="demo bg-blue-500 text-white text-center w-full mb-3">
-          DEMO LOGIN For AdminLogin: ( AdminID ="Admin" Password ="Admin123@" )
-        </div>
+
         <h2 className="text-center text-3xl text-gray-500">Admin Login</h2>
         <form
           action=""
@@ -96,7 +90,7 @@ const Login = () => {
         >
           <input
             type="text"
-            placeholder="AdminID"
+            placeholder="Admin"
             className="border-2 rounded p-2 my-2 w-full"
             required
             onChange={(e) => {
@@ -105,7 +99,7 @@ const Login = () => {
           />
           <input
             type="password"
-            placeholder="Password"
+            placeholder="Admin123@"
             className="border-2 rounded p-2 my-2 w-full"
             onChange={(e) => {
               setAdminPassword(e.target.value);
